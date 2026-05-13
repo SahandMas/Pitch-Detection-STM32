@@ -55,29 +55,28 @@ Includes a complete Proteus project for simulation and testing.
 
 ---
 
-#  Mathematical Background
+##  Mathematical Background
 
 The system uses the **Autocorrelation Function** to detect periodicity in quasi-periodic voice signals.
 
-The autocorrelation of the discrete signal \(x(n)\) is defined as:
+The autocorrelation of the discrete signal $x(n)$ is defined as:
 
-\[
+```latex
 R_x(l) = \sum_{n \in Z} x(n)x(n-l)
-\]
+```
 
 The pitch period is determined by finding the first significant non-zero peak in the autocorrelation output.
 
 The pitch frequency is then calculated using:
 
-\[
+```latex
 f_{pitch} = \frac{f_s}{l_{peak}}
-\]
+```
 
 Where:
 
-- \(f_s\) → Sampling frequency
-- \(l_{peak}\) → Lag corresponding to the first autocorrelation peak
-
+- $f_s$ → Sampling frequency  
+- $l_{peak}$ → Lag corresponding to the first autocorrelation peak
 ---
 
 #  Hardware Specifications
@@ -135,6 +134,9 @@ Detected pitch and note information are displayed on the LCD in real time.
 │   ├── Sample WAV files
 │   └── Test audio signals
 │
-└── docs/
-    ├── Final technical report
+├── Final technical report
     └── Design specifications
+```
+
+# Additional Documentation 
+The complete project description, implementation details, mathematical analysis, hardware design, and final report are available in the PDF documents included in the repository.
